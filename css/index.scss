@@ -4,6 +4,7 @@
 @import "./news-feed.scss";
 
 * {
+  box-sizing: border-box;
   h1,
   h2,
   h3,
@@ -19,11 +20,18 @@
     max-width: 1000px;
     width: 80%;
 
-    h1 {
+    .title {
       color: $secondary-color;
       font-size: 1.3rem;
       font-weight: lighter;
       text-transform: uppercase;
+      @include ease;
+
+      &:hover {
+        @include ease;
+        color: $primary-color;
+        letter-spacing: 2px;
+      }
 
       .underscore {
         margin-left: 5px;
