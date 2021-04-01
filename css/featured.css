@@ -1,0 +1,40 @@
+.featured {
+  border-radius: 4px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 65%;
+}
+
+.featured img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.featured .gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(#706e67));
+  background-image: linear-gradient(to right, black, #706e67);
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.featured .featured-content {
+  bottom: 20px;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  width: 50%;
+  z-index: 100;
+}
+
+.featured .featured-content p {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=featured.css.map */
