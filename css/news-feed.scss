@@ -28,7 +28,7 @@
     .play {
       align-items: center;
       background-color: white;
-      border-radius: 3px;
+      border-radius: 2px;
       color: $primary-color;
       display: flex;
       font-size: 0.6rem;
@@ -85,6 +85,7 @@
       position: absolute;
       left: 0;
       top: 0;
+      width: 100%;
       z-index: 0;
     }
 
@@ -103,14 +104,105 @@
       bottom: 20px;
       color: white;
       font-family: $primary-font;
+      font-size: 1rem;
       padding: 20px;
       position: absolute;
-      width: 50%;
+      width: 40%;
       z-index: 100;
 
       p {
         font-family: $primary-font;
-        font-size: 0.8rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .news-feed {
+    flex-flow: column;
+
+    .news-item {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      width: 100%;
+
+      .news-image {
+        width: 50%;
+      }
+      .news-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+        .category {
+          flex-direction: row;
+          font-size: 1rem;
+
+          .fa-folder {
+            width: auto;
+          }
+        }
+        h3 {
+          font-size: 1.6rem;
+        }
+        p {
+          display: none;
+        }
+      }
+
+      .play {
+        text-align: center;
+      }
+    }
+
+    .featured {
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+      position: relative;
+
+      img {
+        border-radius: 3px;
+        height: auto;
+        position: relative;
+        width: 100%;
+      }
+
+      .gradient {
+        display: none;
+      }
+
+      .featured-content {
+        bottom: auto;
+        color: $secondary-color;
+        left: auto;
+        margin: 0 auto;
+        padding: 0;
+        position: inherit;
+        width: 100%;
+
+        .news-text {
+          margin: 5px 0 -5px;
+         
+          .category {
+            color: $primary-color;
+          }
+
+          .fa-folder {
+            color: $secondary-color;
+          }
+        }
+
+        .featured-title {
+          color: $primary-color;
+        }
+
+        p {
+          font-family: $secondary-font;
+          font-weight: bold;
+        }
       }
     }
   }

@@ -2,7 +2,6 @@
 @import "./mixins.scss";
 
 @import "./news-feed.scss";
-@import "./featured.scss";
 
 * {
   h1,
@@ -29,6 +28,17 @@
       .underscore {
         margin-left: 5px;
         color: $primary-color;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    * {
+      width: 100%;
+      margin: 0 auto;
+      .nav {
+        font-size: 1.6rem;
+        font-weight: bold;
       }
     }
   }
