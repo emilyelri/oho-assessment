@@ -1,0 +1,95 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+* {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $primary-font;
+    color: $primary-color;
+  }
+
+  body {
+    font-family: $secondary-font;
+    margin: 30px auto 0;
+    max-width: 1000px;
+    width: 80%;
+
+    h1 {
+      color: $secondary-color;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .news-feed {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      .news-item {
+        height: 45vh;
+        margin: 20px 0;
+        width: 30%;
+
+        img {
+          width: 100%;
+        }
+
+        h3,
+        h5,
+        p {
+          margin: 0;
+          width: 100%;
+          word-wrap: normal;
+        }
+      }
+
+      .featured {
+        border: 1px solid;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        width: 65%;
+
+        h5, h2, p {
+          color: white;
+        }
+
+        p {
+          width: 40%;
+          font-size: .8rem;
+        }
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 0;
+        }
+
+        .gradient {
+          background-image: linear-gradient(to right, black, #706e67);
+          height: 100%;
+          left: 0;
+          opacity: 0.8;
+          position: absolute;
+          bottom:0;
+          width: 100%;
+          z-index: 50;
+        }
+
+        .featured-content {
+          bottom: 20px;
+          color: white;
+          padding: 20px;
+          position: absolute;
+          width: 100%;
+          z-index: 100;
+        }
+      }
+    }
+  }
+}
