@@ -134,32 +134,4 @@
   width: 100%;
   z-index: 100;
 }
-
-* h1,
-* h2,
-* h3,
-* h4,
-* h5 {
-  color: #d21533;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-* body {
-  font-family: "Cormorant Garamond", serif;
-  margin: 30px auto 50px;
-  max-width: 1000px;
-  width: 80%;
-}
-
-* body h1 {
-  color: #222222;
-  font-size: 1.3rem;
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-* body h1 .underscore {
-  margin-left: 5px;
-  color: #d21533;
-}
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=news-feed.css.map */
